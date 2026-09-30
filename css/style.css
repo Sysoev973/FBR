@@ -86,12 +86,19 @@ footer {
   margin-top: 0;
 }
 
+/* Карточка товара с плавными эффектами наведения */
 .product-card {
   margin-bottom: 16px;
   padding: 16px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background-color: var(--color-bg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .product-card h3 {
@@ -217,21 +224,4 @@ footer {
   color: var(--color-success);
   border: 1px solid var(--color-success);
   border-radius: var(--radius-sm);
-}
-
-/* Базовое состояние карточки */
-.product-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Состояние при наведении мыши */
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* Эффект наведения и фокуса для кнопки Заказать */
-.product-card .btn:hover {
-  background-color: var(--primary-hover, #004085);
-  cursor: pointer;
 }
