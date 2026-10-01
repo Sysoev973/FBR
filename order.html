@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заявки — TechShop</title>
+  <meta name="description" content="Оставьте заявку на товар или консультацию в магазине TechShop.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">TechShop</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item" aria-current="page">Заявка</li></ol></nav>
+    <h1 class="page__title">Оформление заявки</h1>
+    <div class="two-col">
+      <section class="two-col__main" aria-label="Форма заявки">
+      <form class="order-form order-form--page" action="#" method="post" id="order-form">
+        <div class="order-form__grid">
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-name">Имя</label>
+            <input class="order-form__input" id="order-name" name="name" type="text" autocomplete="name" minlength="2" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-email">E-mail</label>
+            <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-phone">Телефон</label>
+            <input class="order-form__input" id="order-phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-topic">Тема / товар</label>
+            <select class="order-form__input" id="order-topic" name="topic" required>
+          <option value="">Выберите товар или тему</option>
+          <option value="keyboard">Механическая клавиатура K1</option>
+          <option value="mouse">Беспроводная мышь M2</option>
+          <option value="headset">Игровые наушники H3</option>
+          <option value="consultation">Консультация</option>
+            </select>
+          </div>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-comment">Комментарий</label>
+          <textarea class="order-form__input" id="order-comment" name="comment" rows="4"></textarea>
+        </div>
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__label order-form__label--inline"><input id="order-agreement" name="agreement" type="checkbox" required> Я согласен на обработку персональных данных</label>
+        </div>
+        <div class="order-form__actions">
+          <button class="button" type="submit">Отправить заявку</button>
+          <button class="button button--outline" type="reset">Очистить</button>
+        </div>
+      </form>
+      </section>
+      <aside class="note two-col__aside">
+        <h2 class="note__title">Как это работает</h2>
+        <ol class="note__list">
+          <li>Заполните форму.</li>
+          <li>Мы свяжемся с вами в течение часа.</li>
+          <li>Подтвердим наличие и условия доставки.</li>
+        </ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 TechShop — учебный проект. Дисциплина: «Фронтенд и бэкенд разработка».</p>
+      <p class="site-footer__text">Тел.: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх">↑</a>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — TechShop</title>
+  <meta name="description" content="Адрес, телефон и форма обратной связи магазина TechShop.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">TechShop</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item" aria-current="page">Контакты</li></ol></nav>
+    <h1 class="page__title">Контакты</h1>
+    <div class="two-col">
+      <section class="two-col__main">
+        <h2 class="section__title">Свяжитесь с нами</h2>
+        <address class="contact-list">
+          <p class="contact-list__item"><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1</p>
+          <p class="contact-list__item"><strong>Телефон:</strong> <a href="tel:+74950000000">+7 (495) 000-00-00</a></p>
+          <p class="contact-list__item"><strong>E-mail:</strong> <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+          <p class="contact-list__item"><strong>Часы работы:</strong> пн–пт 9:00–20:00, сб–вс 10:00–18:00</p>
+        </address>
+      </section>
+      <section class="two-col__aside" aria-label="Обратная связь">
+        <h2 class="section__title">Обратная связь</h2>
+        <form class="order-form order-form--page" action="#" method="post" id="fb-form">
+        <div class="order-form__grid">
+          <div class="order-form__field">
+            <label class="order-form__label" for="fb-name">Имя</label>
+            <input class="order-form__input" id="fb-name" name="name" type="text" autocomplete="name" minlength="2" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="fb-email">E-mail</label>
+            <input class="order-form__input" id="fb-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="fb-phone">Телефон</label>
+            <input class="order-form__input" id="fb-phone" name="phone" type="tel" placeholder="+7 (900) 000-00-00" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="fb-topic">Тема / товар</label>
+            <select class="order-form__input" id="fb-topic" name="topic" required>
+          <option value="">Выберите товар или тему</option>
+          <option value="keyboard">Механическая клавиатура K1</option>
+          <option value="mouse">Беспроводная мышь M2</option>
+          <option value="headset">Игровые наушники H3</option>
+          <option value="consultation">Консультация</option>
+            </select>
+          </div>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="fb-comment">Комментарий</label>
+          <textarea class="order-form__input" id="fb-comment" name="comment" rows="4"></textarea>
+        </div>
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__label order-form__label--inline"><input id="fb-agreement" name="agreement" type="checkbox" required> Я согласен на обработку персональных данных</label>
+        </div>
+        <div class="order-form__actions">
+          <button class="button" type="submit">Отправить сообщение</button>
+          <button class="button button--outline" type="reset">Очистить</button>
+        </div>
+      </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 TechShop — учебный проект. Дисциплина: «Фронтенд и бэкенд разработка».</p>
+      <p class="site-footer__text">Тел.: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх">↑</a>
+</body>
+</html>
