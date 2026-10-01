@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Механическая клавиатура K1 — TechShop</title>
+  <meta name="description" content="Механическая клавиатура K1: характеристики, цена, тарифы доставки.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">TechShop</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs__item" aria-current="page">Клавиатура K1</li>
+      </ol>
+    </nav>
+    <article class="product-page">
+      <div class="product-page__media">
+        <img class="product-page__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260">
+      </div>
+      <div class="product-page__info">
+        <p class="product-card__badge product-card__badge--hit product-page__badge">Хит</p>
+        <h1 class="product-page__title">Механическая клавиатура K1</h1>
+        <p class="product-page__description">Компактная TKL-клавиатура с переключателями red, белой подсветкой и съёмным кабелем USB-C. Подходит для работы и игр.</p>
+        <p class="product-page__price">4 990 ₽</p>
+        <div class="product-page__actions">
+          <a class="button" href="order.html">Оставить заявку</a>
+          <a class="button button--outline" href="catalog.html">Назад в каталог</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="section" id="specs">
+      <h2 class="section__title">Характеристики</h2>
+      <div class="table-wrap">
+        <table class="spec-table">
+          <caption class="spec-table__caption">Технические характеристики K1</caption>
+          <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Формат</th><td>TKL (87 клавиш)</td></tr>
+            <tr><th scope="row">Переключатели</th><td>Red, линейные</td></tr>
+            <tr><th scope="row">Подключение</th><td>USB-C, съёмный кабель 1.8 м</td></tr>
+            <tr><th scope="row">Подсветка</th><td>Белая, 5 режимов</td></tr>
+            <tr><th scope="row">Гарантия</th><td>24 месяца</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="delivery">
+      <h2 class="section__title">Сравнение способов доставки</h2>
+      <div class="table-wrap">
+        <table class="spec-table">
+          <caption class="spec-table__caption">Условия доставки</caption>
+          <thead><tr><th scope="col">Способ</th><th scope="col">Срок</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Самовывоз</th><td>сегодня</td><td>0 ₽</td></tr>
+            <tr><th scope="row">Курьер</th><td>1–2 дня</td><td>300 ₽</td></tr>
+            <tr><th scope="row">Почта России</th><td>5–10 дней</td><td>от 250 ₽</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <h2 class="section__title">Частые вопросы</h2>
+      <details class="faq"><summary class="faq__question">Можно ли заменить переключатели?</summary><p class="faq__answer">Да, клавиатура поддерживает hot-swap.</p></details>
+      <details class="faq"><summary class="faq__question">Есть ли русская раскладка?</summary><p class="faq__answer">Да, русско-английская ANSI.</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 TechShop — учебный проект. Дисциплина: «Фронтенд и бэкенд разработка».</p>
+      <p class="site-footer__text">Тел.: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх">↑</a>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechShop — интернет-магазин компьютерной периферии</title>
-  <meta name="description" content="TechShop: клавиатуры, мыши, наушники и мониторы с доставкой по России.">
+  <title>Каталог — TechShop</title>
+  <meta name="description" content="Каталог компьютерной периферии TechShop: клавиатуры, мыши, наушники, мониторы.">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -15,8 +15,8 @@
       <a class="site-header__logo" href="index.html">TechShop</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
@@ -28,30 +28,38 @@
   </header>
 
   <main class="page" id="main">
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Периферия для работы и игр</h1>
-        <p class="hero__text">Клавиатуры, мыши, наушники и мониторы. Гарантия 2 года и доставка по всей России.</p>
-        <div class="hero__actions">
-          <a class="button" href="catalog.html">Перейти в каталог</a>
-          <a class="button button--outline" href="order.html">Оставить заявку</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="advantages">
-      <h2 class="section__title">Преимущества</h2>
-      <ul class="advantages">
-        <li class="advantages__item"><h3 class="advantages__title">Гарантия 2 года</h3><p>Бесплатный ремонт или замена.</p></li>
-        <li class="advantages__item"><h3 class="advantages__title">Быстрая доставка</h3><p>От 1 дня по Москве, от 3 по России.</p></li>
-        <li class="advantages__item"><h3 class="advantages__title">Возврат 14 дней</h3><p>Если товар не подошёл.</p></li>
-        <li class="advantages__item"><h3 class="advantages__title">Поддержка 24/7</h3><p>Консультации по подбору техники.</p></li>
-      </ul>
-    </section>
-
-    <section class="section" id="popular">
-      <h2 class="section__title">Популярные товары</h2>
-      <div class="catalog-grid">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item" aria-current="page">Каталог</li>
+      </ol>
+    </nav>
+    <h1 class="page__title">Каталог товаров</h1>
+    <div class="catalog-layout">
+      <aside class="filters" aria-label="Фильтры каталога">
+        <h2 class="filters__title">Фильтры</h2>
+        <form class="filters__form" action="#" method="get">
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Категория</legend>
+            <ul class="filters__list">
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Аксессуары"> Аксессуары</label></li>
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Аудио"> Аудио</label></li>
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Камеры"> Камеры</label></li>
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Клавиатуры"> Клавиатуры</label></li>
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Мониторы"> Мониторы</label></li>
+          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Мыши"> Мыши</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Цена</legend>
+            <label class="filters__label" for="price-max">До, ₽</label>
+            <input class="order-form__input" id="price-max" name="price-max" type="number" min="0" step="500" placeholder="25000">
+          </fieldset>
+          <button class="button" type="button" disabled>Применить (в КР №4)</button>
+        </form>
+      </aside>
+      <section class="catalog-layout__list" aria-label="Список товаров">
+        <div class="catalog-grid catalog-grid--two">
         <article class="product-card">
           <span class="product-card__badge product-card__badge--hit">Хит</span>
           <img class="product-card__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260" loading="lazy">
@@ -88,14 +96,43 @@
           <button class="button product-card__button" type="button" data-product="Игровые наушники H3">Заказать</button>
           </div>
         </article>
-      </div>
-      <p class="section__more"><a class="button button--outline" href="catalog.html">Весь каталог</a></p>
-    </section>
-
-    <aside class="note">
-      <h2 class="note__title">Акция месяца</h2>
-      <p>При заказе от 5 000 ₽ — бесплатная доставка. Условия — в разделе <a href="contacts.html">«Контакты»</a>.</p>
-    </aside>
+        <article class="product-card">
+          <img class="product-card__image" src="images/monitor.svg" alt="Монитор 27" QHD" width="400" height="260" loading="lazy">
+          <p class="product-card__category">Мониторы</p>
+          <h3 class="product-card__title">Монитор 27" QHD</h3>
+          <p class="product-card__description">IPS, 144 Гц, регулируемая подставка.</p>
+          <p class="product-card__price">21 900 ₽</p>
+          <div class="product-card__actions">
+            <a class="button button--outline" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Монитор 27" QHD">Заказать</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <img class="product-card__image" src="images/webcam.svg" alt="Веб-камера W4" width="400" height="260" loading="lazy">
+          <p class="product-card__category">Камеры</p>
+          <h3 class="product-card__title">Веб-камера W4</h3>
+          <p class="product-card__description">Full HD 60 к/с, автофокус, два микрофона.</p>
+          <p class="product-card__price">2 790 ₽</p>
+          <div class="product-card__actions">
+            <a class="button button--outline" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="Веб-камера W4">Заказать</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img class="product-card__image" src="images/hub.svg" alt="USB-C хаб 7-в-1" width="400" height="260" loading="lazy">
+          <p class="product-card__category">Аксессуары</p>
+          <h3 class="product-card__title">USB-C хаб 7-в-1</h3>
+          <p class="product-card__description">HDMI 4K, 3×USB-A, SD, питание 100 Вт.</p>
+          <p class="product-card__price">2 290 ₽</p>
+          <div class="product-card__actions">
+            <a class="button button--outline" href="product.html">Подробнее</a>
+          <button class="button product-card__button" type="button" data-product="USB-C хаб 7-в-1">Заказать</button>
+          </div>
+        </article>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer" id="contacts">
