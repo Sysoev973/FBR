@@ -33,8 +33,8 @@
   <main class="page" id="main">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <ol class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item" aria-current="page">Каталог</li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Каталог</span></li>
       </ol>
     </nav>
     <h1 class="page__title">Каталог товаров</h1>
@@ -60,45 +60,45 @@
             <label class="catalog-filters__label" for="price-max">До, ₽</label>
             <input class="catalog-filters__input" id="price-max" name="price-max" type="number" min="0" step="500" placeholder="25000">
           </fieldset>
-          <button class="button" type="button" disabled>Применить (в КР №4)</button>
+          <button class="button button--primary" type="button" disabled>Применить (в КР №4)</button>
         </form>
       </aside>
       <section class="catalog-products" aria-label="Список товаров">
         <div class="products-grid">
-        <article class="product-card">
-          <span class="product-card__badge product-card__badge--hit">Хит</span>
+        <article class="product-card product-card--featured">
+          <span class="badge badge--hit product-card__badge">Хит</span>
           <img class="product-card__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260" loading="lazy">
           <p class="product-card__category">Клавиатуры</p>
           <h3 class="product-card__title">Механическая клавиатура K1</h3>
           <p class="product-card__description">Компактная TKL, переключатели red, подсветка.</p>
           <p class="product-card__price">4 990 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Механическая клавиатура K1">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Механическая клавиатура K1">Заказать</button>
           </div>
         </article>
         <article class="product-card">
-          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <span class="badge badge--new product-card__badge">Новинка</span>
           <img class="product-card__image" src="images/mouse.svg" alt="Беспроводная мышь M2" width="400" height="260" loading="lazy">
           <p class="product-card__category">Мыши</p>
           <h3 class="product-card__title">Беспроводная мышь M2</h3>
           <p class="product-card__description">Лёгкая мышь, 2.4 ГГц и Bluetooth, 12 000 DPI.</p>
           <p class="product-card__price">1 990 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Беспроводная мышь M2">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Беспроводная мышь M2">Заказать</button>
           </div>
         </article>
         <article class="product-card product-card--discount">
-          <span class="product-card__badge product-card__badge--sale">Скидка</span>
+          <span class="badge badge--sale product-card__badge">Скидка</span>
           <img class="product-card__image" src="images/headset.svg" alt="Игровые наушники H3" width="400" height="260" loading="lazy">
           <p class="product-card__category">Аудио</p>
           <h3 class="product-card__title">Игровые наушники H3</h3>
           <p class="product-card__description">Накладные, шумоподавление микрофона, 7.1.</p>
           <p class="product-card__price">3 490 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Игровые наушники H3">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Игровые наушники H3">Заказать</button>
           </div>
         </article>
         <article class="product-card">
@@ -108,20 +108,20 @@
           <p class="product-card__description">IPS, 144 Гц, регулируемая подставка.</p>
           <p class="product-card__price">21 900 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Монитор 27&quot; QHD">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Монитор 27&quot; QHD">Заказать</button>
           </div>
         </article>
         <article class="product-card">
-          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <span class="badge badge--new product-card__badge">Новинка</span>
           <img class="product-card__image" src="images/webcam.svg" alt="Веб-камера W4" width="400" height="260" loading="lazy">
           <p class="product-card__category">Камеры</p>
           <h3 class="product-card__title">Веб-камера W4</h3>
           <p class="product-card__description">Full HD 60 к/с, автофокус, два микрофона.</p>
           <p class="product-card__price">2 790 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="Веб-камера W4">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Веб-камера W4">Заказать</button>
           </div>
         </article>
         <article class="product-card">
@@ -131,8 +131,8 @@
           <p class="product-card__description">HDMI 4K, 3×USB-A, SD, питание 100 Вт.</p>
           <p class="product-card__price">2 290 ₽</p>
           <div class="product-card__actions">
-            <a class="button button--outline" href="product.html">Подробнее</a>
-          <button class="button product-card__button" type="button" data-product="USB-C хаб 7-в-1">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <button class="button button--primary product-card__button" type="button" data-product="USB-C хаб 7-в-1">Заказать</button>
           </div>
         </article>
         </div>
@@ -149,7 +149,7 @@
   <a class="to-top" href="#main" aria-label="Наверх">↑</a>
 
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-    <h2 id="order-dialog-title">Быстрая заявка</h2>
+    <h2 class="order-dialog__title" id="order-dialog-title">Быстрая заявка</h2>
     <form class="order-form" id="order-form" action="#" method="post" novalidate>
       <input id="selected-product" name="selected-product" type="hidden">
       <p class="order-form__selected" id="selected-product-label" hidden></p>
@@ -168,7 +168,7 @@
       </div>
       <div class="order-form__field">
         <label class="order-form__label" for="order-topic">Тема заявки</label>
-        <select class="order-form__input" id="order-topic" name="topic" required>
+        <select class="order-form__select" id="order-topic" name="topic" required>
           <option value="">Выберите тему</option>
           <option value="product">Заказ товара</option>
           <option value="consultation">Консультация</option>
@@ -177,14 +177,14 @@
       </div>
       <div class="order-form__field">
         <label class="order-form__label" for="order-comment">Комментарий</label>
-        <textarea class="order-form__input" id="order-comment" name="comment" rows="3" placeholder="Дополнительная информация"></textarea>
+        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="3" placeholder="Дополнительная информация"></textarea>
       </div>
       <div class="order-form__field order-form__field--checkbox">
         <label class="order-form__label order-form__label--inline"><input id="order-agreement" name="agreement" type="checkbox" required> Я согласен на обработку данных</label>
       </div>
       <div class="order-form__actions">
-        <button class="button button--outline" type="button" id="close-order-dialog">Закрыть</button>
-        <button class="button" type="submit">Отправить заявку</button>
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
       </div>
     </form>
   </dialog>
