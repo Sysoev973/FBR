@@ -39,30 +39,32 @@
     </nav>
     <h1 class="page__title">Каталог товаров</h1>
     <div class="catalog-layout">
-      <aside class="filters" aria-label="Фильтры каталога">
-        <h2 class="filters__title">Фильтры</h2>
-        <form class="filters__form" action="#" method="get">
-          <fieldset class="filters__group">
-            <legend class="filters__legend">Категория</legend>
-            <ul class="filters__list">
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Аксессуары"> Аксессуары</label></li>
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Аудио"> Аудио</label></li>
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Камеры"> Камеры</label></li>
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Клавиатуры"> Клавиатуры</label></li>
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Мониторы"> Мониторы</label></li>
-          <li class="filters__item"><label class="filters__label"><input type="checkbox" name="category" value="Мыши"> Мыши</label></li>
+      <aside class="catalog-filters" aria-label="Фильтры каталога">
+        <h2 class="catalog-filters__title">Фильтры</h2>
+        <form class="catalog-filters__form" action="#" method="get">
+          <fieldset class="catalog-filters__group">
+            <legend class="catalog-filters__legend">Категория</legend>
+            <ul class="catalog-filters__list">
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Аксессуары"> Аксессуары</label></li>
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Аудио"> Аудио</label></li>
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Камеры"> Камеры</label></li>
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Клавиатуры"> Клавиатуры</label></li>
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Мониторы"> Мониторы</label></li>
+          <li class="catalog-filters__item"><label class="catalog-filters__label"><input type="checkbox" name="category" value="Мыши"> Мыши</label></li>
             </ul>
           </fieldset>
-          <fieldset class="filters__group">
-            <legend class="filters__legend">Цена</legend>
-            <label class="filters__label" for="price-max">До, ₽</label>
-            <input class="order-form__input" id="price-max" name="price-max" type="number" min="0" step="500" placeholder="25000">
+          <fieldset class="catalog-filters__group">
+            <legend class="catalog-filters__legend">Цена</legend>
+            <label class="catalog-filters__label" for="price-min">От, ₽</label>
+            <input class="catalog-filters__input" id="price-min" name="price-min" type="number" min="0" step="500" placeholder="0">
+            <label class="catalog-filters__label" for="price-max">До, ₽</label>
+            <input class="catalog-filters__input" id="price-max" name="price-max" type="number" min="0" step="500" placeholder="25000">
           </fieldset>
           <button class="button" type="button" disabled>Применить (в КР №4)</button>
         </form>
       </aside>
-      <section class="catalog-layout__list" aria-label="Список товаров">
-        <div class="catalog-grid catalog-grid--two">
+      <section class="catalog-products" aria-label="Список товаров">
+        <div class="products-grid">
         <article class="product-card">
           <span class="product-card__badge product-card__badge--hit">Хит</span>
           <img class="product-card__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260" loading="lazy">
