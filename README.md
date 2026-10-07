@@ -19,7 +19,7 @@ GitHub Pages: https://Sysoev973.github.io/FBR/
 ```
 kr1-html-css-shop/
 ├── index.html      — главная: hero, преимущества, популярные товары
-├── catalog.html    — каталог: сетка карточек, статический блок фильтров
+├── catalog.html    — каталог: сетка карточек и блок фильтров (Grid)
 ├── product.html    — карточка товара: описание, 2 таблицы, FAQ
 ├── order.html      — форма заявки
 ├── contacts.html   — контакты и форма обратной связи
@@ -44,7 +44,7 @@ HTML5, CSS3 (переменные, Flexbox, Grid, sticky/fixed), минимал�
 | Форма (label/for/id, name, required, type=email, согласие) | `order.html`, `contacts.html`, модалка |
 | Модальное окно `<dialog>` | `index.html`, `catalog.html` |
 | CSS-переменные, `:hover`, `:focus-visible`, `:disabled` | `css/style.css` |
-| Flexbox и Grid | шапка, кнопки; сетка каталога, раскладка с фильтрами |
+| Flexbox и Grid | навигация, карточки, формы; `products-grid`, `catalog-layout` с `grid-template-areas` |
 | Позиционирование | `relative` (карточка), `absolute` (бейдж), `sticky` (шапка, фильтры), `fixed` (кнопка «Наверх», уведомление), `z-index` |
 
 ## Самостоятельные доработки
@@ -64,6 +64,16 @@ HTML5, CSS3 (переменные, Flexbox, Grid, sticky/fixed), минимал�
 - Практическая работа 3: добавлена форма заявки, модальное окно и базовая валидация.
 - Практическая работа 4: добавлены CSS-переменные, состояния интерфейса и упорядочена структура стилей.
 - Практическая работа 5: создана многостраничная структура сайта, добавлены единая навигация, якорные ссылки, хлебные крошки, `:target`, Open Graph и `sitemap.xml`.
+- Практическая работа 6: добавлены Flexbox-навигация и Grid-раскладка карточек и каталога (`grid-template-areas`, `grid-area`).
+
+## Использование Flexbox и Grid
+
+- `site-nav__list` — `display: flex` с `justify-content`, `align-items`, `gap`;
+- `product-card` — `display: flex; flex-direction: column`, блок кнопок прижат к низу карточки;
+- `products-grid` — `display: grid` с `repeat(auto-fill, minmax(260px, 1fr))` и `gap`;
+- `catalog-layout` — `display: grid`, `grid-template-columns: 260px 1fr`, `grid-template-areas: "filters products"`; `catalog-filters` и `catalog-products` занимают свои области через `grid-area`;
+- `catalog-filters__form` — `display: grid` для групп полей фильтра;
+- `order-form`, `order-form__actions`, `hero__actions` — Flexbox.
 
 ## Курс
 Проект — основа для КР №3 (адаптивность), КР №4 (JavaScript), КР №5 (SPA).
