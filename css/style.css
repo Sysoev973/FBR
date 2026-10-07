@@ -39,6 +39,9 @@ a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visib
   outline: 2px solid var(--color-primary); outline-offset: 3px;
 }
 
+/* Подсветка цели якорной ссылки */
+.section:target, .site-footer:target { outline: 2px dashed var(--color-primary); outline-offset: 4px; }
+
 .skip-link { position: absolute; left: var(--space-md); top: -100px; z-index: 300; padding: var(--space-sm) var(--space-md); background: var(--color-primary); color: #fff; border-radius: var(--radius-sm); }
 .skip-link:focus { top: var(--space-sm); }
 
