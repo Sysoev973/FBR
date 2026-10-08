@@ -39,7 +39,7 @@ HTML5, CSS3 (переменные, Flexbox, Grid, sticky/fixed), минимал�
 |---|---|
 | Семантика `header, nav, main, section, article, aside, footer` | все страницы |
 | Единая навигация + якорные ссылки (`#advantages`, `#popular`, `#contacts`, `#specs`, `#delivery`, `#faq`) | шапка и подвал |
-| Карточки товаров (БЭМ, бейджи) | `index.html`, `catalog.html` |
+| Карточки товаров (БЭМ, бейджи, модификаторы `--featured`, `--discount`) | `index.html`, `catalog.html` |
 | Таблицы с `caption/thead/tbody/th/td` | `product.html` |
 | Форма (label/for/id, name, required, type=email, согласие) | `order.html`, `contacts.html`, модалка |
 | Модальное окно `<dialog>` | `index.html`, `catalog.html` |
@@ -65,6 +65,7 @@ HTML5, CSS3 (переменные, Flexbox, Grid, sticky/fixed), минимал�
 - Практическая работа 4: добавлены CSS-переменные, состояния интерфейса и упорядочена структура стилей.
 - Практическая работа 5: создана многостраничная структура сайта, добавлены единая навигация, якорные ссылки, хлебные крошки, `:target`, Open Graph и `sitemap.xml`.
 - Практическая работа 6: добавлены Flexbox-навигация и Grid-раскладка карточек и каталога (`grid-template-areas`, `grid-area`).
+- Практическая работа 7: выполнен рефакторинг CSS-стилей по методологии БЭМ.
 
 ## Использование Flexbox и Grid
 
@@ -74,6 +75,30 @@ HTML5, CSS3 (переменные, Flexbox, Grid, sticky/fixed), минимал�
 - `catalog-layout` — `display: grid`, `grid-template-columns: 260px 1fr`, `grid-template-areas: "filters products"`; `catalog-filters` и `catalog-products` занимают свои области через `grid-area`;
 - `catalog-filters__form` — `display: grid` для групп полей фильтра;
 - `order-form`, `order-form__actions`, `hero__actions` — Flexbox.
+
+## БЭМ-структура проекта
+
+Блоки (элементы — `block__element`, модификаторы — `block--modifier`):
+
+- `site-header` — шапка сайта (`__inner`, `__logo`);
+- `site-nav` — основная навигация (`__list`, `__item`, `__link`, `__link--active`);
+- `breadcrumbs` — хлебные крошки (`__list`, `__item`, `__link`, `__current`);
+- `hero` — первый экран главной страницы;
+- `section`, `advantages`, `note` — разделы и информационные блоки;
+- `products-grid` — сетка товаров;
+- `product-card` — карточка товара (`__image`, `__title`, `__description`, `__price`, `__actions`, `__button`; модификаторы `--featured`, `--discount`);
+- `badge` — бейдж (`--hit`, `--new`, `--sale`);
+- `catalog-layout` — структура страницы каталога;
+- `catalog-filters` — фильтры каталога (`__form`, `__group`, `__legend`, `__list`, `__item`, `__label`, `__input`);
+- `catalog-products` — область списка товаров;
+- `product-page`, `spec-table`, `faq` — страница товара, таблицы, FAQ;
+- `order-dialog` — модальное окно заявки (`__title`);
+- `order-form` — форма заявки (`__field`, `__label`, `__input`, `__select`, `__textarea`, `__actions`, `__actions--start`);
+- `button` — кнопка (`--primary`, `--secondary`, `--disabled`);
+- `success-message`, `to-top`, `skip-link` — вспомогательные компоненты;
+- `site-footer` — подвал сайта.
+
+Стилизация через `id` и inline-стили не используются; `id` оставлены только для якорей, `label for` и JavaScript.
 
 ## Курс
 Проект — основа для КР №3 (адаптивность), КР №4 (JavaScript), КР №5 (SPA).

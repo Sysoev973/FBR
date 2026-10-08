@@ -33,9 +33,9 @@
   <main class="page" id="main">
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <ol class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs__item" aria-current="page">Клавиатура K1</li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Клавиатура K1</span></li>
       </ol>
     </nav>
     <article class="product-page">
@@ -43,13 +43,13 @@
         <img class="product-page__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260">
       </div>
       <div class="product-page__info">
-        <p class="product-card__badge product-card__badge--hit product-page__badge">Хит</p>
+        <p class="badge badge--hit">Хит</p>
         <h1 class="product-page__title">Механическая клавиатура K1</h1>
         <p class="product-page__description">Компактная TKL-клавиатура с переключателями red, белой подсветкой и съёмным кабелем USB-C. Подходит для работы и игр.</p>
         <p class="product-page__price">4 990 ₽</p>
         <div class="product-page__actions">
-          <a class="button" href="order.html">Оставить заявку</a>
-          <a class="button button--outline" href="catalog.html">Назад в каталог</a>
+          <a class="button button--primary" href="order.html">Оставить заявку</a>
+          <a class="button button--secondary" href="catalog.html">Назад в каталог</a>
         </div>
       </div>
     </article>
@@ -59,13 +59,13 @@
       <div class="table-wrap">
         <table class="spec-table">
           <caption class="spec-table__caption">Технические характеристики K1</caption>
-          <thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead>
+          <thead><tr class="spec-table__row"><th class="spec-table__head-cell" scope="col">Параметр</th><th class="spec-table__head-cell" scope="col">Значение</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Формат</th><td>TKL (87 клавиш)</td></tr>
-            <tr><th scope="row">Переключатели</th><td>Red, линейные</td></tr>
-            <tr><th scope="row">Подключение</th><td>USB-C, съёмный кабель 1.8 м</td></tr>
-            <tr><th scope="row">Подсветка</th><td>Белая, 5 режимов</td></tr>
-            <tr><th scope="row">Гарантия</th><td>24 месяца</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Формат</th><td class="spec-table__cell">TKL (87 клавиш)</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Переключатели</th><td class="spec-table__cell">Red, линейные</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Подключение</th><td class="spec-table__cell">USB-C, съёмный кабель 1.8 м</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Подсветка</th><td class="spec-table__cell">Белая, 5 режимов</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Гарантия</th><td class="spec-table__cell">24 месяца</td></tr>
           </tbody>
         </table>
       </div>
@@ -76,11 +76,11 @@
       <div class="table-wrap">
         <table class="spec-table">
           <caption class="spec-table__caption">Условия доставки</caption>
-          <thead><tr><th scope="col">Способ</th><th scope="col">Срок</th><th scope="col">Цена</th></tr></thead>
+          <thead><tr class="spec-table__row"><th class="spec-table__head-cell" scope="col">Способ</th><th class="spec-table__head-cell" scope="col">Срок</th><th class="spec-table__head-cell" scope="col">Цена</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Самовывоз</th><td>сегодня</td><td>0 ₽</td></tr>
-            <tr><th scope="row">Курьер</th><td>1–2 дня</td><td>300 ₽</td></tr>
-            <tr><th scope="row">Почта России</th><td>5–10 дней</td><td>от 250 ₽</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Самовывоз</th><td class="spec-table__cell">сегодня</td><td class="spec-table__cell">0 ₽</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Курьер</th><td class="spec-table__cell">1–2 дня</td><td class="spec-table__cell">300 ₽</td></tr>
+            <tr class="spec-table__row"><th class="spec-table__row-head" scope="row">Почта России</th><td class="spec-table__cell">5–10 дней</td><td class="spec-table__cell">от 250 ₽</td></tr>
           </tbody>
         </table>
       </div>
