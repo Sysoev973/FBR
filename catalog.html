@@ -38,6 +38,7 @@
       </ol>
     </nav>
     <h1 class="page__title">Каталог товаров</h1>
+    <p class="page__lead">Подборка: <a href="category.html">клавиатуры — три модели и таблица сравнения</a>.</p>
     <div class="catalog-layout">
       <aside class="catalog-filters" aria-label="Фильтры каталога">
         <h2 class="catalog-filters__title">Фильтры</h2>
@@ -68,7 +69,7 @@
         <article class="product-card product-card--featured">
           <span class="badge badge--hit product-card__badge">Хит</span>
           <img class="product-card__image" src="images/keyboard.svg" alt="Механическая клавиатура K1" width="400" height="260" loading="lazy">
-          <p class="product-card__category">Клавиатуры</p>
+          <p class="product-card__category"><a class="product-card__category-link" href="category.html">Клавиатуры</a></p>
           <h3 class="product-card__title">Механическая клавиатура K1</h3>
           <p class="product-card__description">Компактная TKL, переключатели red, подсветка.</p>
           <p class="product-card__price">4 990 ₽</p>
@@ -135,6 +136,30 @@
             <button class="button button--primary product-card__button" type="button" data-product="USB-C хаб 7-в-1">Заказать</button>
           </div>
         </article>
+        <article class="product-card">
+          <span class="badge badge--new product-card__badge">Новинка</span>
+          <img class="product-card__image" src="images/keyboard2.svg" alt="Компактная клавиатура K2" width="400" height="260" loading="lazy">
+          <p class="product-card__category"><a class="product-card__category-link" href="category.html">Клавиатуры</a></p>
+          <h3 class="product-card__title">Компактная клавиатура K2</h3>
+          <p class="product-card__description">60%, Bluetooth 5.1 и USB-C, RGB-подсветка, hot-swap.</p>
+          <p class="product-card__price">5 490 ₽</p>
+          <div class="product-card__actions">
+            <a class="button button--secondary" href="category.html#compare">Сравнить</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Компактная клавиатура K2">Заказать</button>
+          </div>
+        </article>
+        <article class="product-card product-card--discount">
+          <span class="badge badge--sale product-card__badge">Скидка</span>
+          <img class="product-card__image" src="images/keyboard3.svg" alt="Беспроводная клавиатура K3" width="400" height="260" loading="lazy">
+          <p class="product-card__category"><a class="product-card__category-link" href="category.html">Клавиатуры</a></p>
+          <h3 class="product-card__title">Беспроводная клавиатура K3</h3>
+          <p class="product-card__description">Полноразмерная, бесшумные клавиши, 2.4 ГГц и Bluetooth.</p>
+          <p class="product-card__price">3 990 ₽</p>
+          <div class="product-card__actions">
+            <a class="button button--secondary" href="category.html#compare">Сравнить</a>
+            <button class="button button--primary product-card__button" type="button" data-product="Беспроводная клавиатура K3">Заказать</button>
+          </div>
+        </article>
         </div>
       </section>
     </div>
@@ -152,7 +177,7 @@
         </ul>
       </nav>
       <p class="site-footer__text">&copy; 2026 TechShop — учебный проект. Дисциплина: «Фронтенд и бэкенд разработка».</p>
-      <p class="site-footer__text">Тел.: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+      <p class="site-footer__text">Тел.: <a class="site-footer__link" href="tel:+74950000000">+7 (495) 000-00-00</a> · <a class="site-footer__link" href="mailto:info@techshop.example">info@techshop.example</a></p>
     </div>
   </footer>
   <a class="to-top" href="#main" aria-label="Наверх">↑</a>

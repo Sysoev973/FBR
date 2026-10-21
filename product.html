@@ -50,6 +50,7 @@
         <div class="product-page__actions">
           <a class="button button--primary" href="order.html">Оставить заявку</a>
           <a class="button button--secondary" href="catalog.html">Назад в каталог</a>
+          <a class="button button--secondary" href="category.html#compare">Сравнить модели</a>
         </div>
       </div>
     </article>
@@ -86,6 +87,51 @@
       </div>
     </section>
 
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <h2 class="section__title" id="reviews-title">Отзывы покупателей</h2>
+      <p class="reviews__summary">
+        <span class="rating rating--4-7" role="img" aria-label="Средняя оценка 4,7 из 5">★★★★★</span>
+        <strong>4,7</strong> из 5 · 3 отзыва
+      </p>
+      <div class="reviews__list">
+        <article class="review-card review-card--top">
+          <header class="review-card__header">
+            <p class="review-card__author">Алексей М.</p>
+            <span class="rating rating--5" role="img" aria-label="Оценка 5 из 5">★★★★★</span>
+          </header>
+          <p class="review-card__label">Полезный отзыв</p>
+          <p class="review-card__text">Пользуюсь второй месяц. Переключатели Red тихие и быстрые, подсветка ровная. Поменял на Brown без пайки: hot-swap работает, как заявлено.</p>
+          <footer class="review-card__footer">
+            <time class="review-card__date" datetime="2026-09-14">14 сентября 2026</time>
+            <span class="review-card__verified">Покупка подтверждена</span>
+          </footer>
+        </article>
+        <article class="review-card">
+          <header class="review-card__header">
+            <p class="review-card__author">Марина К.</p>
+            <span class="rating rating--5" role="img" aria-label="Оценка 5 из 5">★★★★★</span>
+          </header>
+          <p class="review-card__text">Компактная, не занимает место на столе, кабель съёмный. Для работы с кодом и для игр подошла одинаково хорошо.</p>
+          <footer class="review-card__footer">
+            <time class="review-card__date" datetime="2026-09-28">28 сентября 2026</time>
+            <span class="review-card__verified">Покупка подтверждена</span>
+          </footer>
+        </article>
+        <article class="review-card">
+          <header class="review-card__header">
+            <p class="review-card__author">Игорь С.</p>
+            <span class="rating rating--4" role="img" aria-label="Оценка 4 из 5">★★★★★</span>
+          </header>
+          <p class="review-card__text">Хорошая клавиатура за свои деньги. Минус один: хотелось бы Bluetooth, но для проводной модели это не недостаток.</p>
+          <footer class="review-card__footer">
+            <time class="review-card__date" datetime="2026-10-03">3 октября 2026</time>
+            <span class="review-card__verified">Покупка подтверждена</span>
+          </footer>
+        </article>
+      </div>
+      <p class="reviews__note">Отзывы вымышлены и приведены в учебных целях.</p>
+    </section>
+
     <section class="section" id="faq">
       <h2 class="section__title">Частые вопросы</h2>
       <details class="faq"><summary class="faq__question">Можно ли заменить переключатели?</summary><p class="faq__answer">Да, клавиатура поддерживает hot-swap.</p></details>
@@ -105,7 +151,7 @@
         </ul>
       </nav>
       <p class="site-footer__text">&copy; 2026 TechShop — учебный проект. Дисциплина: «Фронтенд и бэкенд разработка».</p>
-      <p class="site-footer__text">Тел.: <a href="tel:+74950000000">+7 (495) 000-00-00</a> · <a href="mailto:info@techshop.example">info@techshop.example</a></p>
+      <p class="site-footer__text">Тел.: <a class="site-footer__link" href="tel:+74950000000">+7 (495) 000-00-00</a> · <a class="site-footer__link" href="mailto:info@techshop.example">info@techshop.example</a></p>
     </div>
   </footer>
   <a class="to-top" href="#main" aria-label="Наверх">↑</a>
