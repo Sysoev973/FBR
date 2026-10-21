@@ -12,7 +12,7 @@ if (orderDialog) {
     Array.from(orderForm.elements).forEach((el) => el.removeAttribute('aria-invalid'));
   };
 
-  document.querySelectorAll('.product-card__button').forEach((button) => {
+  document.querySelectorAll('[data-product]').forEach((button) => {
     button.addEventListener('click', () => {
       selectedInput.value = button.dataset.product;
       selectedLabel.textContent = 'Выбран товар: ' + button.dataset.product;
